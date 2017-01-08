@@ -1,0 +1,383 @@
+.post-red{
+  background-color: #FFD3D2;
+}
+.post-blue{
+  background-color: #D2F5FF;
+}
+.post-yellow{
+  background-color: #FBFFD2;
+}
+.post-green{
+  background-color: #D2FFD2;
+}
+
+.makerHunter{
+      margin-top:10px;
+    .row{
+		border-top: 1px solid #f2f2f2;
+	    border-bottom: 1px solid #f2f2f2;
+		display: flex;
+		
+        .hunter{
+				flex: 0.1;
+				padding-top:10px;
+				padding-bottom:10px;	        
+			    font-weight: 600;
+				font-size: 12px;
+				color: #999;
+			    border-right: 1px solid #f2f2f2;	
+				padding-right: 10px;
+					
+				.noHunterText{
+					font-weight: 300;
+					font-size: 10px;
+				}
+        }
+        .maker{
+				flex:1;
+				padding-top:10px;
+				padding-bottom:10px;
+			.hunterHarcodeText{
+				font-weight: 600;
+				font-size: 12px;
+				color: #999;
+			}
+		    padding-left: 0;
+			margin-left: 20px;
+          
+		    .makerHarcodeText{
+				font-weight: 600;
+				font-size: 12px;
+				color: #999;
+				padding-left: 10px;	
+		  }
+		   .makerUserName{
+				font-size: 14px;
+				color: #000; 
+				font-weight: 700;	
+				font-family: proxima-nova,Proxima Nova,helvetica,arial,sans-serif;	
+			
+				.makerProfileLink{
+					color:black;	
+				}
+		  }
+		  .makerPic{
+			width: 50px;
+			margin-right:20px;
+			border-radius: 40px;
+		  }
+            
+        }
+    }
+}
+.CustomPostListWrapper{
+	width:70%;
+	.posts-list{
+		flex:1;
+		.posts-item{
+			padding-left:15px;
+				
+			.posts-item-content{
+				.posts-item-title{
+					.posts-categories{
+						flex: 0;
+						display: flex;
+						justify-content: flex-end;
+
+
+					}
+					
+
+				}
+				
+				.posts-item-meta{
+					.posts-stats{
+						display:none;
+					}
+				}
+			}
+		}
+	}
+}
+.CustomCategoriesContainer{
+	display: inline-block;
+    float: right;
+    width: 30%;
+    padding-left: 5%;
+	
+	.customCategoriesWrapper{
+		flex:0 20%;
+		display:flex;
+		justify-content: center;
+		align-items: baseline;
+		
+		.clearLinkContainer{
+			text-align:center;
+			margin-bottom:20px;
+			a{
+				background-color: #0275D8;
+			}
+		}
+		.posts-categories a{
+			margin-top:10px;
+			}
+		.category-menu-item.dropdown-item{
+				white-space:normal;
+				&:hover{
+					background-color:white;
+				}
+		.CategoriesLinkWrapper{
+			&.active{
+				li{
+					a{
+						background-color:#0275D8;
+						text-decoration:none;
+						color:white;
+						i{
+							display:none;
+						}
+					}
+				}
+			}
+			display:inline-block;
+			li{
+				list-style:none;
+				display:inline-block;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				
+				border-radius: 10px;
+					
+				a{
+				    background: #F6F2EF;
+					color: #AF9D95;
+					border: none;
+					display: inline-block;
+					border-radius: 10px;
+					margin-right: 5px;
+					padding: 2px 6px;
+					border: 1px solid #D9C8C1;
+					margin: 0;
+					
+					transition: color ease-out 300ms;
+					
+					&:hover{
+						background-color:#0275D8;
+						text-decoration:none;
+						color:white;
+					}
+				}
+			}
+		}	
+		
+		}
+	}
+}
+
+
+.customDatePriceCountry{
+	flex: 0	;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 14px;
+    font-weight: 100;
+   	height:80px;
+	
+	.dateContainer{
+	    padding: 0px 15px;
+	    background-color: #DADEEA;
+	    color: #7C8BAC;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    align-items: center;
+	    border-radius: 5px;
+	    margin-right: 5px;
+	    width: 80px;
+
+	    .month{
+	    	    font-family: "Helvetica Neue";
+			    font-size: 20px;
+			    font-weight: normal;
+			    fill: rgb(126, 139, 172);
+	    }
+	    .day{
+	            font-family: "Helvetica Neue";
+			    font-size: 36px;
+			    font-weight: normal;
+			    fill: rgb(126, 140, 172);
+	    }
+	    .year{
+	    	    font-family: "Helvetica Neue";
+			    font-size: 14px;
+			    font-weight: normal;
+			    fill: rgb(126, 139, 172);
+	    }	
+	}
+	
+	.countryName{
+		text-transform: capitalize;
+		
+	}
+
+	.price,.countryName{
+		padding-right:5px;
+	}
+
+}
+.customVote{
+	flex:0;
+	display:flex;
+	justify-content:flex-end;
+	align-items: center;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #D92A2F transparent transparent;
+    position: relative;
+    top: -5px;
+    margin-right: 0;
+    
+	.vote{
+		position: absolute;
+	    left: 20px;
+	    top: 2px;
+
+	    .vote-count{
+	   		 display:none;
+	    }
+	}
+
+	.upvote-button{
+		border:none;
+		flex-direction:row;
+		&:hover{
+			background:none;
+		}
+	}
+	.icon.fa.fa-fw.fa-heart{
+		color: red;
+	}
+}
+ 
+  .countryRelDateParentContainer{
+     
+
+	 .countryRelDateContainer{
+			 display: flex;
+		     justify-content: flex-end;
+	 	     margin: 10px 0;
+
+	 	     .currencyDropDown{
+
+	 	     	.dropdown-menu{
+	 	     			border:0;
+	 	     		    width: 20px;
+					    max-width: 50px;
+					    min-width: 50px !important;
+					    background-color: #808080;
+					    color: white;
+					    text-align: center;
+
+	 	     			li{
+	 	     				display:block;
+	 	     				padding: 5px 0;
+    						cursor: pointer;
+
+    						&:hover{
+    						    background-color: #ddd;
+    							color: black;
+    						}
+	 	     			}
+
+	 	     	}	
+	 	     }
+
+	 	     .priceContainer{
+	 	     	display:flex;	
+	 	     }
+	 }   
+ }
+ .AdditionalInfoContainer{
+	text-align:center;
+	margin:15px 0;
+}
+.priceWrapper{
+	flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    color: #9BA4BA;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: normal;
+    fill: rgb(126, 139, 172);
+
+    .currencyIcon{
+    	i{
+    		font-size:16px;
+    	}
+
+    }
+	.price,.countryName{
+		padding-right:5px;
+	}	
+}
+.posts-item {
+	
+	padding: 5px 5px;
+	flex-wrap: wrap;
+	padding-right: 0;
+}
+
+
+.commnetorsCategoriesContainer{
+	display: flex;
+    justify-content: flex-end;
+	.posts-categories{
+		flex: 0;
+	    justify-content: flex-end;
+	    padding-right: 20px;
+	   
+
+	    a{
+	        color: #7e8bb3;
+	    	background-color: #d9deea;
+	    }
+	}
+
+	.posts-commenters{
+		margin-right:10px;
+	}
+}
+
+.header-wrapper{
+	background-color:#9013FE;
+}
+
+.nav-new-post button,.nav-new-post button:hover,.nav-new-post button:focus{
+	border: 3px solid white;
+    border-radius: 5px;
+    background-color: #9013FE;	
+}
+.logo-text a{
+	color:white;
+
+	&:hover{
+		color:white;
+	}
+}
+#user-dropdown{
+	div{
+		color:white;
+	}
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url("http://localhost:3000/packages/my-custom-package/UbuntuTitling-Bold.ttf") format("truetype");
+}
+body{
+	 font-family: "My Custom Font", Verdana, Tahoma;
+}
